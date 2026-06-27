@@ -1,0 +1,10 @@
+{
+  "name": "UAgent: Manual to UAT Script Humanizer",
+  "description": "Convert raw shorthand manual test steps into polished, professional UAT Excel scripts using AI-powered linguistic transformation.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "AI-powered Linguistic Engine",
+    "Professional Excel generation",
+    "UAT Scenario Management"
+  ]
+}

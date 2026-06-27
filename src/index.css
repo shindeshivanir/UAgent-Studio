@@ -1,0 +1,42 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  
+  --color-brand-blue: #002060;
+  --color-brand-accent: #0070C0;
+  --color-bg-gray: #F3F4F6;
+  --color-border-main: #E5E7EB;
+}
+
+@layer base {
+  body {
+    @apply font-sans bg-bg-gray text-neutral-900;
+  }
+}
+
+.card-container {
+  @apply bg-white rounded-lg border border-border-main shadow-sm flex flex-col overflow-hidden;
+}
+
+.grid-header {
+  @apply bg-brand-blue text-white font-bold border-b border-gray-400;
+}
+
+.excel-cell {
+  @apply border border-black p-2 align-top text-[11px] leading-tight;
+}
+
+.input-field {
+  @apply w-full px-3 py-2 border border-gray-200 rounded bg-gray-50 text-sm focus:bg-white focus:outline-none focus:ring-1 focus:ring-blue-500 transition-all;
+}
+
+.btn-primary-theme {
+  @apply bg-brand-blue text-white px-5 py-2 rounded-md text-sm font-medium hover:bg-blue-900 transition-colors disabled:opacity-50;
+}
+
+.btn-outline-theme {
+  @apply bg-white border border-blue-600 text-blue-600 px-8 py-2 rounded font-bold text-sm shadow-sm active:bg-blue-50 hover:bg-neutral-50 transition-colors;
+}
